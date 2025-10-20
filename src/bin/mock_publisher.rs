@@ -21,7 +21,7 @@ struct MQTTConfig {
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     const BROKER_CONFIG: MQTTConfig = MQTTConfig {
-        host: "local",
+        host: "localhost",
         port: 1883,
         client_id: "rust_mock_sensor_pub",
         topic: "sensors/living_room/environment",
